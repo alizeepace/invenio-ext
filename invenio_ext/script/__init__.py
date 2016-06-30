@@ -146,7 +146,7 @@ def check_for_software_updates(flash_message=False):
                 flash(_('A newer version of Invenio is available for '
                         'download. You may want to visit '
                         '<a href="%(wiki)s">%()s</a>',
-                        wiki='<a href=\"http://invenio-software.org/wiki/'
+                        wiki='<a href=\"http://inveniosoftware.org/wiki/'
                              '/Installation/Download'), 'warning(html_safe)')
 
             return False

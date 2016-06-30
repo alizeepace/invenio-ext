@@ -26,4 +26,4 @@ Authors
 
 Invenio module that provides integration with Flask extensions.
 
-- CERN <info@invenio-software.org>
+- CERN <info@inveniosoftware.org>

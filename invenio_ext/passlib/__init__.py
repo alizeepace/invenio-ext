@@ -39,12 +39,12 @@ Invenio legacy support:
    hash = password_context.encrypt(
        "mypassword",
        scheme="invenio_aes_encrypted_email",
-       user="info@invenio-software.org",
+       user="info@inveniosoftware.org",
     )
    password_context.verify(
        "mypassword", hash
        scheme="invenio_aes_encrypted_email",
-       user="info@invenio-software.org",
+       user="info@inveniosoftware.org",
    )
    password_context.needs_update(hash)
 

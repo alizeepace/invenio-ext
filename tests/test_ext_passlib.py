@@ -92,11 +92,11 @@ class PasslibTestCase(InvenioTestCase):
         hashval = ctx.encrypt(
             "mypassword",
             scheme="invenio_aes_encrypted_email",
-            user="info@invenio-software.org",
+            user="info@inveniosoftware.org",
         )
         assert ctx.verify("mypassword", hashval,
                           scheme="invenio_aes_encrypted_email",
-                          user="info@invenio-software.org", )
+                          user="info@inveniosoftware.org", )
         assert ctx.needs_update(hashval)
 
     def test_unicode_regression(self):
@@ -105,9 +105,9 @@ class PasslibTestCase(InvenioTestCase):
         hashval = ctx.encrypt(
             u"mypassword",
             scheme="invenio_aes_encrypted_email",
-            user=u"info@invenio-software.org",
+            user=u"info@inveniosoftware.org",
         )
         assert ctx.verify(u"mypassword", hashval,
                           scheme="invenio_aes_encrypted_email",
-                          user=u"info@invenio-software.org", )
+                          user=u"info@inveniosoftware.org", )
         assert ctx.needs_update(hashval)
